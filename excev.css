@@ -1,0 +1,141 @@
+@charset "UTF-8";
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    font-family: cursive;
+    border-style: none;
+}
+body{
+    background-image: url(fundo-celular.jpg);
+    background-size: cover;
+}
+main{
+    width: 90%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(255, 255, 255, 0.712);
+}
+img{
+    height: 265px;
+    width: 170px;
+    float: left;
+}
+h1{
+    text-align: center;
+    font-size: 37px;
+    padding: 5px;
+}
+h2{
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+    font-size: 20px;
+}
+form{
+    border-top: 2px solid rgba(47, 7, 139, 0.651);
+    text-align: center;
+}
+#senha{
+    margin: 0px 0px 0px 11px;
+}
+#usuario, #senha{
+    padding: 3px;
+    border-radius: 10px;
+    border: 2px solid rgba(37, 0, 138, 0.692);
+}
+label{
+    padding-left: 7px;
+}
+#enviar{
+    margin: 15px;
+    padding: 15px;
+    border: 4px solid rgba(37, 0, 138, 0.527);
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+@media screen and (min-width: 555px) {
+    #enviar{
+        display: block;
+        margin: 15px auto;
+        border-radius: 25px;
+        font-size: 15px;
+    }
+    img{
+        height: 312px;
+        width: 220px;
+    }
+    #usuario{
+        margin-left: 10px;
+    }
+    label{
+        display: block;
+    }
+}
+@media screen and (min-width: 688px){
+    body{
+        background-image: url(planeta-tela.jpg);
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+    main{
+        width: 80%;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+        
+    }
+    h2{
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    img{
+        height: 336px;
+        width: 300px;
+        float: right;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    #usuario{
+        margin-left:12px;
+    }
+    #senha, #usuario{
+        padding-left: 15px;
+    }
+    label{
+        display: block;
+        padding: 4px 0px 3px 0px;
+
+    }
+    #enviar{
+        display: block;
+        margin: 15px auto;
+        border-radius: 20px;
+        font-size: 15px;
+    }
+}
+@media screen and (min-width: 900px) {
+    main{
+        width: 60%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: rgb(255, 255, 255);
+    }
+}
+@media screen and (min-width: 1200px) {
+    main{
+        width: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: rgb(255, 255, 255);
+    }
+}
