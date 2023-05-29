@@ -90,18 +90,26 @@ label{
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.432);
     transition: .2s;
 }
-@media screen and (width>389px) {
+@media screen and (width > 389px) {
     main{
         width: 60%;
     }
 }
-@media screen and (width > 430px) {
+@media screen and (width > 431px) {
     body{
         background-image: url(planeta-tela.jpg);
         background-position: right top;
     }
     main{
-        background-color: rgba(255, 255, 255, 0.205);
+        width: 90%;
+        height: 480px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: rgba(255, 255, 255, 0.712);
+        overflow: hidden;
+        border-radius: 50px;
     }
     img{
         height: 480px;
@@ -135,11 +143,24 @@ label{
     }
     #usuario, #senha{
         display: block;
-        margin: 10px auto;
+        margin: 3px auto;
         padding: 6px 10px 6px 20px;
         width: 160px;
     }
     #enviar{
         padding: 20px;
+    }
+}
+@media screen and (width > 823px) {
+    main{
+        width: 60%;
+        height: 480px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: rgba(255, 255, 255, 0.712);
+        overflow: hidden;
+        border-radius: 50px;
     }
 }
