@@ -9,41 +9,62 @@
 body{
     background-image: url(fundo-celular.jpg);
     background-size: cover;
+    background-attachment: fixed;
 }
 main{
-    width: 90%;
+    width: 70%;
+    height: 480px;
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     background-color: rgba(255, 255, 255, 0.712);
+    overflow: hidden;
+    border-radius: 50px;
 }
 img{
-    height: 265px;
-    width: 170px;
-    float: left;
+    height: 210px;
+    width: 100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    float: top;
 }
 h1{
     text-align: center;
-    font-size: 37px;
-    padding: 5px;
+    font-size: 26px;
+    padding: 2px;
 }
 h2{
     text-align: center;
     padding: 0px 10px 0px 10px;
-    font-size: 20px;
+    font-size: 17px;
+    padding-bottom: 8px;
 }
 form{
     border-top: 2px solid rgba(47, 7, 139, 0.651);
     text-align: center;
+    width: 100%;
 }
 #senha{
     margin: 0px 0px 0px 11px;
 }
 #usuario, #senha{
-    padding: 3px;
+    margin-top: 10px;
+    padding: 3px 3px 3px 20px;
+    width: 120px;
     border-radius: 10px;
     border: 2px solid rgba(37, 0, 138, 0.692);
+}
+#usuario:hover, #senha:hover{
+    transform: translateY( -1px);
+    border: 2px solid rgb(26, 0, 99);
+    transition: .5s;
+}
+#usuario:focus, #senha:focus{
+    border: 2px solid rgb(37, 4, 128);
+    background-color: rgb(235, 235, 235);
+    transition: 1s;
 }
 label{
     padding-left: 7px;
@@ -52,90 +73,73 @@ label{
     margin: 15px;
     padding: 15px;
     border: 4px solid rgba(37, 0, 138, 0.527);
-    border-radius: 5px;
+    border-radius: 15px;
     background-color: white;
     cursor: pointer;
 }
-@media screen and (min-width: 555px) {
-    #enviar{
-        display: block;
-        margin: 15px auto;
-        border-radius: 25px;
-        font-size: 15px;
-    }
-    img{
-        height: 312px;
-        width: 220px;
-    }
-    #usuario{
-        margin-left: 10px;
-    }
-    label{
-        display: block;
+#enviar:hover{
+    transform: translate(-1px, -3px);
+    background-color: rgb(238, 238, 238);
+    border: 4px solid rgba(33, 2, 121, 0.87);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.293);
+    transition: .4s;
+}
+#enviar:active{
+    background-color: rgb(230, 230, 230);
+    border: 4px solid rgb(20, 0, 77);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.432);
+    transition: .2s;
+}
+@media screen and (width>389px) {
+    main{
+        width: 60%;
     }
 }
-@media screen and (min-width: 688px){
+@media screen and (width > 430px) {
     body{
         background-image: url(planeta-tela.jpg);
-        background-repeat: no-repeat;
-        background-size: auto;
+        background-position: right top;
     }
     main{
-        width: 80%;
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        background-color: rgb(255, 255, 255);
-        border-radius: 20px;
-        
+        background-color: rgba(255, 255, 255, 0.205);
+    }
+    img{
+        height: 480px;
+        width: 50%;
+        float: left;
+        position: relative;
+        left: 0%;
+        transform: translateX(0%);
+    }
+    h1{
+        text-align: center;
+        font-size: 30px;
+        padding: 50px 0px 30px 0px;
     }
     h2{
         text-align: center;
-        padding-bottom: 10px;
+        padding: 0px 10px 30px 10px;
+        font-size: 20px;
     }
-    img{
-        height: 336px;
-        width: 300px;
+    form{
+        border-top: 2px solid rgba(47, 7, 139, 0.651);
+        text-align: center;
+        width: 50%;
         float: right;
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
     }
-    #usuario{
-        margin-left:12px;
-    }
-    #senha, #usuario{
-        padding-left: 15px;
+    #pUsuario{
+        padding-top: 20px;
     }
     label{
         display: block;
-        padding: 4px 0px 3px 0px;
-
+    }
+    #usuario, #senha{
+        display: block;
+        margin: 10px auto;
+        padding: 6px 10px 6px 20px;
+        width: 160px;
     }
     #enviar{
-        display: block;
-        margin: 15px auto;
-        border-radius: 20px;
-        font-size: 15px;
-    }
-}
-@media screen and (min-width: 900px) {
-    main{
-        width: 60%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        background-color: rgb(255, 255, 255);
-    }
-}
-@media screen and (min-width: 1200px) {
-    main{
-        width: 50%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        background-color: rgb(255, 255, 255);
+        padding: 20px;
     }
 }
